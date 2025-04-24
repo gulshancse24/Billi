@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Ankita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <profile>
+        <header>
+            <name>✨ Ankita ✨</name>
+
+        </header>
+        
+        <navigation>
+            <nav-item onclick="showPage('mainContent')">Home</nav-item>
+            <nav-item onclick="showPage('photoContent')">Photo Gallery</nav-item>
+            <nav-item onclick="showPage('memoryContent')">Memories</nav-item>
+        </navigation>
+
+        <content id="mainContent">
+            <message>To My Wonderful Friend</message>
+            <qualities>
+                <quality>🌟 Beautiful Soul</quality>
+                <quality>💫 Amazing Friend</quality>
+                <quality>😊 Brightest Smile</quality>
+                <quality>💝 Kind Heart</quality>
+                <quality>✨ Pure Spirit</quality>
+            </qualities>
+            <special-note>
+                Dear Ankita,
+                Your friendship is a gift I treasure every day.
+                Your smile lights up the room and your kindness touches hearts.
+                Thank you for being you! 
+            </special-note>
+        </content>
+
+        <content id="photoContent" style="display: none;">
+            <h2 class="gallery-title">Our Beautiful Moments 📸</h2>
+            <photo-grid>
+                <photo-item>
+                    <img src="photos/photo2.jpg" alt="Beautiful Moment 2" onclick="openLightbox(this)"/>
+                    <photo-caption>First Time time pass </photo-caption>
+                </photo-item>
+                <photo-item>
+                    <img src="photos/photo1.jpg" alt="Beautiful Moment 1" onclick="openLightbox(this)"/>
+                    <photo-caption>Selfi toh nhi bss ek Time spent moment tha ye !!</photo-caption>
+                </photo-item>
+            </photo-grid>
+
+            <!-- Lightbox for enlarged images -->
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <span class="close-btn">&times;</span>
+                <img id="lightbox-img" src="" alt="Enlarged photo">
+            </div>
+        </content>
+
+        <content id="memoryContent" style="display: none;">
+            <div class="floating-flowers">
+                <span class="flower">🌸</span>
+                <span class="flower">🌺</span>
+                <span class="flower">🌹</span>
+                <span class="flower">🌷</span>
+                <span class="flower">💐</span>
+            </div>
+            <h2 class="memory-header">✨ Precious Memories ✨</h2>
+            <memory-wall>
+                <memory-card>
+                    <memory-title>💝 First Day We Met</memory-title>
+                    <memory-text>That special moment when our paths crossed... A day that started something beautiful!</memory-text>
+                    <memory-date>A Day to Remember</memory-date>
+                </memory-card>
+                <memory-card>
+                    <memory-title>💫 Our Best Moments</memory-title>
+                    <memory-text>Every laugh, every conversation, every moment spent together makes life more colorful!</memory-text>
+                    <memory-date>Endless Joy</memory-date>
+                </memory-card>
+                <memory-card>
+                    <memory-title>✨ Special Times</memory-title>
+                    <memory-text>The little moments that become big memories, the simple times that become precious treasures...</memory-text>
+                    <memory-date>Forever Cherished</memory-date>
+                </memory-card>
+            </memory-wall>
+        </content>
+
+        <footer>
+            <hearts>🌸 🌺 🌹</hearts>
+        </footer>
+    </profile>
+
+    <script src="script.js"></script>
+</body>
+</html>
